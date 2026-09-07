@@ -2,7 +2,7 @@
 
 Aplikasi Netlify tanpa database yang membaca Google Form publik secara langsung, menampilkan satu soal per layar, lalu meneruskan seluruh jawaban ke endpoint `formResponse` Google Form asli.
 
-Versi 2.7.2 menambahkan dukungan grid pilihan ganda, grid kotak centang, skala linear, rating, tanggal, waktu, dan durasi. Pilihan biasa kini menggunakan indikator radio atau checklist polos tanpa huruf A/B/C/D. Payload pilihan menyertakan field sentinel yang diperlukan Google Forms, sedangkan tanggal dan waktu dikirim dalam format dua digit yang divalidasi.
+Versi 2.7.3 menambahkan dukungan grid pilihan ganda, grid kotak centang, skala linear, rating, tanggal, waktu, dan durasi. Pilihan biasa kini menggunakan indikator radio atau checklist polos tanpa huruf A/B/C/D. Deteksi tahun dan durasi membaca metadata internal pertanyaan, sedangkan tanggal dan waktu dikirim dalam format dua digit yang divalidasi.
 
 ## Menjalankan secara lokal
 
