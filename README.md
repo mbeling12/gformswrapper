@@ -2,7 +2,7 @@
 
 Aplikasi Netlify tanpa database yang membaca Google Form publik secara langsung, menampilkan satu soal per layar, lalu meneruskan seluruh jawaban ke endpoint `formResponse` Google Form asli.
 
-Versi 2.6.0 menghadirkan desain admin dan ruang ujian yang lebih bersih, minimalis, nyaman dilihat, serta lebih mudah digunakan pada layar laptop maupun smartphone.
+Versi 2.7.0 menambahkan dukungan grid pilihan ganda, grid kotak centang, skala linear, rating, tanggal, waktu, dan durasi. Pilihan biasa kini menggunakan indikator radio atau checklist polos tanpa huruf A/B/C/D.
 
 ## Menjalankan secara lokal
 
@@ -42,7 +42,7 @@ Drag-and-drop folder mentah di halaman Netlify Drop tidak selalu menyertakan pro
 5. Klik **Simpan & Buat Link Ujian**, lalu bagikan tautannya.
 6. Jika isi Google Form berubah, klik **Baca Ulang** dan simpan kembali konfigurasi.
 
-## Fitur versi 2.2
+## Fitur versi 2.7
 
 - Tema Ujian, Bisnis, dan Casual dengan pratinjau serta mode terang/gelap.
 - Pemeriksaan koneksi, fullscreen, orientasi, dan jumlah soal sebelum mulai.
@@ -68,8 +68,8 @@ Drag-and-drop folder mentah di halaman Netlify Drop tidak selalu menyertakan pro
 
 - Parser bergantung pada variabel internal `FB_PUBLIC_LOAD_DATA_` milik Google. Perubahan struktur internal Google Forms dapat memerlukan pembaruan parser.
 - Tanpa cache, setiap pembukaan dan pengiriman ujian melakukan permintaan langsung ke Google Forms. Trafik peserta yang sangat besar dapat meningkatkan waktu muat atau risiko pembatasan permintaan dari Google.
-- Didukung: pilihan ganda, checkbox, dropdown, jawaban singkat, dan paragraf.
-- Grid, unggah file, tanggal/waktu, dan skala linear ditampilkan sebagai tipe yang belum didukung.
+- Didukung: pilihan ganda, checkbox, dropdown, jawaban singkat, paragraf, grid pilihan ganda, grid kotak centang, skala linear, rating, tanggal, waktu, dan durasi.
+- Upload file tetap tidak didukung karena Google Forms mewajibkan autentikasi akun Google untuk tipe tersebut.
 - Form yang mewajibkan login, membatasi satu respons, mengumpulkan email terverifikasi, atau memakai alur section/percabangan tidak didukung pada versi ini.
 - Validasi khusus Google Forms selain status wajib (misalnya pola teks atau batas angka) belum direplikasi di tampilan ujian.
 - Jangan gunakan aplikasi ini untuk formulir yang memuat data pribadi sensitif tanpa meninjau kebijakan privasi dan pengelolaan akses Anda.
